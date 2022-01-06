@@ -1,0 +1,1299 @@
+@import url('common.css');
+@import url('font.css');
+
+/* 폰트 
+<마포 애민>    
+font-family: 'MapoAgape';
+font-weight: normal;
+<Noto Serif KR>
+font-family: 'Noto Serif KR', serif;
+font-weight: 200, 300, 400, 500, 600, 700, 900;
+*/
+@font-face {
+    font-family: 'MapoAgape';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoAgapeA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* 우측 하단 TOP 버튼 */
+#top_btn{
+    /* display: none; */
+    position:fixed;
+    bottom:6%;
+    right:2%;
+    z-index: 100;
+}
+#top_btn button{
+      /* width: 55px; */
+    padding: 15px 14px 10px 15px;
+    width: 60px;
+    height: 60px;
+    background: #3e3a39;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50px;
+    box-shadow: 0px 2px 2px #666;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+}
+#top_btn button:hover{
+    width: 150px;
+    background-color: #3e3a39;
+    box-shadow: 0px 2px 2px #555;
+}
+#top_btn button .tB_hover_text{
+    vertical-align: middle;
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    font: 400 15px 'MapoAgape';
+    white-space: nowrap;
+    color: #fff;
+    transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);;
+    opacity: 0;
+}
+#top_btn button:hover .tB_hover_text{
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);;
+    opacity: 1;
+}
+#top_btn button .material-icons{
+    position: absolute;
+    top: 15px;
+    right: 14px;
+    font-weight: 400;
+    font-size: 30px;
+    /* color: #040000; */
+    color: #ccc;
+    text-shadow: 0px 2px 3px #040000;
+    transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);;
+}
+#top_btn button:hover .material-icons{
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: none;
+}
+ /* // 우측 하단 TOP 버튼 */
+
+/* header height: 93px */
+
+/* main - container */
+#container{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* -- 매인 1 - 만족오향족발의 세가지 맛의 비밀 -- */
+#main1{
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.m1_wrap{
+    width: 100%;
+    /* height: inherit; */
+    height: 1200px;
+    margin: 0 auto;
+    background-color: #e6ded6;
+}
+
+.m1_title{
+    padding-top: 160px;
+}
+.m1_title h2{
+    text-align: center;
+    cursor: default;
+}
+.m1_title h2 span{
+    font-weight: 300;
+    font-size: 48px;
+    font-family: 'MapoAgape';
+    color: #3E3A39;
+    letter-spacing: -1px;
+}
+
+/* -- m1_area -- */
+.m1_area{
+    /* margin-top: 85px; */
+    width: 100%;
+    max-width: 1200px;
+    margin: 85px auto 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.m1_a1{
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.m1_a1_title{
+    margin-top: 20px;
+}
+.m1_a1_title p{
+    font-weight: 300;
+    font-size: 40px;
+    font-family: 'MapoAgape';
+    color: #3e3a39;
+    text-align: left;
+    letter-spacing: -2px;
+    position: relative;
+    z-index: 1;
+}
+    .m1_a1_t1{
+        
+    }
+    .m1_a1_t2{}
+    .m1_a1_t2:before{
+        display: block;
+        content: '';
+        width: 160px;
+        height: 21px;
+        position: absolute;
+        z-index: -1;
+        bottom: -1px;
+        left: -1px;
+        background-color: #efbe7d;
+    }
+
+.m1_a1_list{
+    margin-top: 46px;
+}
+.m1_a1_list ul{}
+.m1_a1_list ul li{
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.m1_a1_list ul li+li{
+    margin-top: 36px;
+}
+    .m1_a1_list_img{
+        width: 70px;
+        height: 70px;
+    }
+    .m1_a1_list_img img{
+        width: 70px;
+        height: 70px;
+    }
+
+.m1_a1_list_text{
+    margin-left: 18px;
+}
+.m1_a1_list_text dl{
+    font-family: 'Noto Serif KR', serif;
+    color: #3e3a39;
+}
+.m1_a1_list_text dl dt{
+    margin-bottom: 10px;
+}
+    .m1_a1_list_text dl dt span{
+        font-weight: 900;
+        font-size: 22px;
+        color: #3e3a39;
+        line-height: 26px;
+    }
+.m1_a1_list_text dl dd{
+    margin-top: 12px;
+}
+    .m1_a1_list_text dl dd span{
+        font-weight: 500;
+        font-size: 16px;
+        color: #3e3a39;
+        line-height: 20px;
+    }
+
+.m1_a2{
+    width: 50%;
+    margin: 0 auto;
+}
+.m1_a2_img{
+    width: 492px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.m1_a2_img:hover{
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    top: 0px;
+    left: 0px;
+}
+
+.m1_a2_img img{
+    width: 492px;
+    height: 700px;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.m1_a2_img:hover img{
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    top: -10px;
+    left: -10px;
+    border-radius: 0px;
+}
+.m1_a2_img:before{
+    display: block;
+    content: '';
+    width: 492px;
+    height: 700px;
+    background-color: #821000;
+    position: absolute;
+    z-index: 0;
+    top: 30px;
+    left: 30px;
+    transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.m1_a2_img:hover.m1_a2_img:before{
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    top: 35px;
+    left: 30px;
+}
+/* -- // m1_area -- */
+/* -- //매인 1 - 만족오향족발의 세가지 맛의 비밀 -- */
+
+/* -- 매인 2 - 맛의 매력을 더하는 다양한 방법 -- */
+#main2{
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.m2_wrap{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* m2_area1 */
+.m2_area1{
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #3e3a39;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.m2_a1_box{}
+.m2_a1_box dl{
+    cursor: default;
+}
+.m2_a1_box dl dt{
+    margin-top: 20px;
+}
+    .m2_a1_title{
+        font-weight: normal;
+        font-size: 48px;
+        font-family: 'MapoAgape';
+    }
+    .m2_a1_title-color1{
+        color: #efbe7d;
+    }
+.m2_a1_box dl dd{
+    margin-top: 32px;
+}
+    .m2_a1_text{
+        font-weight: 500;
+        font-size: 22px;
+        font-family: 'Noto Serif KR', serif;
+        line-height: 34px;
+    }
+/* // m2_area1 */
+
+/* m2_area2 */
+.m2_area2{
+    width: 100%;
+    /* height: calc(200px + 34vw); */
+    height: 766px;
+}
+.m2_a2-content{
+    width: 100%;
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.m2_a2-content>div{
+    width: 100%;
+    height: 766px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.m2_a2-content>div>dl{
+    width: 100%;
+    margin: 0 auto;
+    cursor: default;
+}
+
+.m2_a2-content>div>dl:before{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 766px;
+    margin: 0 auto;
+    background-color: rgba(34, 34, 34, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.m2_a2-content>div>dl:hover:before{
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    background-color: rgba(34, 34, 34, 0.3);
+    filter: saturate(160%)
+}
+
+.m2_a2-content>div>dl>dt{
+    position: relative;
+    z-index: 1;
+    font-weight: normal;
+    font-size: 40px;
+    font-family: 'MapoAgape';
+    transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+    .m2_a2-content>div>dl:hover>dt{
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        /* color: #3e3a39; */
+    }
+.m2_a2-content>div>dl>dd{
+    position: relative;
+    z-index: 1;
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Noto Serif KR', serif;
+    transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+    .m2_a2-content>div>dl:hover>dd{
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        /* color: #3e3a39; */
+    }
+
+    .m2_a2_cont-1{
+        background: url(../image/tastiy/m2_a2_content_img-1.png) center top no-repeat;
+        background-size: cover;
+    }
+    .m2_a2_cont-2{
+        background: url(../image/tastiy/m2_a2_content_img-2.png) center top no-repeat;
+        background-size: cover;
+    }
+    .m2_a2_cont-3{
+        background: url(../image/tastiy/m2_a2_content_img-3.png) center top no-repeat;
+        background-size: cover;
+    }
+/* // m2_area2 */
+
+/* -- // 매인 2 - 맛의 매력을 더하는 다양한 방법 -- */
+
+/* // main - container */
+
+
+/* Tablet__________________________________ */
+@media screen and (min-width:768px) and (max-width:1199px){
+
+    html{
+        width: 100%;
+        min-width: 768px;
+        height: 100%;
+    }
+    
+    body{
+        width: 100%;
+        min-width: 768px;
+        height: 100%;
+        position: relative;
+        font-size: 1rem;  /*모든글자 기본글자크기*/
+        font-weight: 400 !important;
+        /* font-weight: 100, 300, 400, 500, 700, 900; */
+        font-family: 'Noto Sans KR', sans-serif !important;
+        line-height: 1.6rem;
+        color: #222;
+        vertical-align: baseline;
+    }
+    body a{
+        display: inline-block;
+        text-decoration: none;
+    }
+    body img{vertical-align: middle;}
+
+    /* 우측 하단 TOP 버튼 */
+    #top_btn{
+        /* display: none; */
+        position:fixed;
+        bottom:4%;
+        right:2%;
+        z-index: 100;
+    }
+    #top_btn button{
+        /* width: 55px; */
+        padding: 15px 14px 10px 15px;
+        width: 50px;
+        height: 50px;
+        background: #3e3a39;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 50px;
+        box-shadow: 0px 2px 2px #666;
+        cursor: pointer;
+        transition: all 0.3s;
+        position: relative;
+    }
+    #top_btn button:hover{
+        width: 150px;
+        background-color: #3e3a39;
+        box-shadow: 0px 2px 2px #555;
+    }
+    #top_btn button .tB_hover_text{
+        vertical-align: middle;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        font: 400 15px 'MapoAgape';
+        white-space: nowrap;
+        color: #fff;
+        transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);;
+        opacity: 0;
+    }
+    #top_btn button:hover .tB_hover_text{
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);;
+        opacity: 1;
+    }
+    #top_btn button .material-icons{
+        position: absolute;
+        top: 11px;
+        right: 11px;
+        font-weight: 400;
+        font-size: 24px;
+        /* color: #040000; */
+        color: #ccc;
+        text-shadow: 0px 2px 3px #040000;
+        transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);;
+    }
+    #top_btn button:hover .material-icons{
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);;
+        font-weight: 400;
+        color: #fff;
+        text-shadow: none;
+    }
+    /* // 우측 하단 TOP 버튼 */
+
+    /* header height: 93px */
+
+    /* main - container */
+    #container{
+        width: 100%;
+        min-width: 768px;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    /* -- 매인 1 - 만족오향족발의 세가지 맛의 비밀 -- */
+    #main1{
+        width: 100%;
+        min-width: 768px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .m1_wrap{
+        width: 100%;
+        /* height: inherit; */
+        height: 1000px;
+        margin: 0 auto;
+        background-color: #e6ded6;
+    }
+
+    .m1_title{
+        padding-top: 160px;
+    }
+    .m1_title h2{
+        text-align: center;
+        cursor: default;
+    }
+    .m1_title h2 span{
+        font-weight: 300;
+        font-size: 48px;
+        font-family: 'MapoAgape';
+        color: #3E3A39;
+        letter-spacing: -1px;
+        line-height: 52px;
+    }
+
+    /* -- m1_area -- */
+    .m1_area{
+        /* margin-top: 85px; */
+        width: 100%;
+        max-width: unset;
+        margin: 85px auto 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .m1_a1{
+        width: 50%;
+        margin: 0 auto;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .m1_a1_title{
+        margin-top: 20px;
+        margin-left: 15%;
+    }
+    .m1_a1_title p{
+        font-weight: 300;
+        font-size: 2rem;
+        font-family: 'MapoAgape';
+        color: #3e3a39;
+        text-align: left;
+        letter-spacing: -2px;
+        line-height: 2.2rem;
+        position: relative;
+        z-index: 1;
+    }
+        .m1_a1_t1{
+            
+        }
+        .m1_a1_t2{}
+        .m1_a1_t2:before{
+            display: block;
+            content: '';
+            width: 125px;
+            height: 14px;
+            position: absolute;
+            z-index: -1;
+            bottom: -1px;
+            left: 0px;
+            background-color: #efbe7d;
+        }
+
+    .m1_a1_list{
+        margin-top: 46px;
+        margin-left: 35px;
+    }
+    .m1_a1_list ul{}
+    .m1_a1_list ul li{
+        /* width: 100%; */
+        margin: 0 auto;
+        text-align: left;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .m1_a1_list ul li+li{
+        margin-top: 36px;
+    }
+        .m1_a1_list_img{
+            display: block;
+            width: 50px;
+            height: 50px;
+        }
+        .m1_a1_list_img img{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+    .m1_a1_list_text{
+        margin-left: 10px;
+    }
+    .m1_a1_list_text dl{
+        font-family: 'Noto Serif KR', serif;
+        color: #3e3a39;
+    }
+    .m1_a1_list_text dl dt{
+        margin-bottom: 0px;
+    }
+        .m1_a1_list_text dl dt span{
+            font-weight: 900;
+            font-size: 1.125rem;
+            color: #3e3a39;
+            letter-spacing: -1px;
+            line-height: 0px;
+        }
+    .m1_a1_list_text dl dd{
+        margin-top: 12px;
+    }
+        .m1_a1_list_text dl dd span{
+            display: block;
+            font-weight: 500;
+            font-size: 0.875rem;
+            color: #3e3a39;
+            letter-spacing: -1px;
+            line-height: 1.25rem;
+            white-space: nowrap;
+        }
+
+    .m1_a2{
+        width: 50%;
+        margin: 60px auto 0;
+    }
+    .m1_a2_img{
+        width: 70%;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .m1_a2_img:hover{
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        top: 0px;
+        left: 0px;
+    }
+
+    .m1_a2_img img{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .m1_a2_img:hover img{
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        top: -10px;
+        left: -10px;
+        border-radius: 0px;
+    }
+    .m1_a2_img:before{
+        display: block;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: #821000;
+        position: absolute;
+        z-index: 0;
+        top: 30px;
+        left: 30px;
+        transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .m1_a2_img:hover.m1_a2_img:before{
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        top: 35px;
+        left: 30px;
+    }
+    /* -- // m1_area -- */
+    /* -- //매인 1 - 만족오향족발의 세가지 맛의 비밀 -- */
+
+    /* -- 매인 2 - 맛의 매력을 더하는 다양한 방법 -- */
+    #main2{
+        width: 100%;
+        min-width: 768px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .m2_wrap{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* m2_area1 */
+    .m2_area1{
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+        background-color: #3e3a39;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .m2_a1_box{}
+    .m2_a1_box dl{
+        cursor: default;
+    }
+    .m2_a1_box dl dt{
+        margin-top: 20px;
+    }
+        .m2_a1_title{
+            font-weight: normal;
+            font-size: 2.625rem;
+            font-family: 'MapoAgape';
+        }
+        .m2_a1_title-color1{
+            color: #efbe7d;
+        }
+    .m2_a1_box dl dd{
+        margin-top: 32px;
+    }
+        .m2_a1_text{
+            font-weight: 500;
+            font-size: 1.250rem;
+            font-family: 'Noto Serif KR', serif;
+            line-height: 30px;
+        }
+    /* // m2_area1 */
+
+    /* m2_area2 */
+    .m2_area2{
+        width: 100%;
+        /* height: calc(200px + 34vw); */
+        height: 766px;
+    }
+    .m2_a2-content{
+        width: 100%;
+        height: inherit;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+    }
+    .m2_a2-content>div{
+        width: 100%;
+        height: 766px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .m2_a2-content>div>dl{
+        width: 100%;
+        margin: 0 auto;
+        cursor: default;
+    }
+
+    .m2_a2-content>div>dl:before{
+        display: block;
+        content: '';
+        width: 100%;
+        height: 766px;
+        margin: 0 auto;
+        background-color: rgba(34, 34, 34, 0.3);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .m2_a2-content>div>dl:hover:before{
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        background-color: rgba(34, 34, 34, 0.3);
+        filter: saturate(160%)
+    }
+
+    .m2_a2-content>div>dl>dt{
+        position: relative;
+        z-index: 1;
+        font-weight: normal;
+        font-size: 1.5rem;
+        font-family: 'MapoAgape';
+        word-break: keep-all;
+        transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+        .m2_a2-content>div>dl:hover>dt{
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            /* color: #3e3a39; */
+        }
+    .m2_a2-content>div>dl>dd{
+        position: relative;
+        z-index: 1;
+        width: 70%;
+        margin: 20px auto 0;
+        font-weight: 500;
+        font-size: 0.95rem;
+        font-family: 'Noto Serif KR', serif;
+        word-break: keep-all;
+        transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+        .m2_a2-content>div>dl:hover>dd{
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            /* color: #3e3a39; */
+        }
+
+        .m2_a2_cont-1{
+            background: url(../image/tastiy/m2_a2_content_img-1.png) center top no-repeat;
+            background-size: cover;
+        }
+        .m2_a2_cont-2{
+            background: url(../image/tastiy/m2_a2_content_img-2.png) center top no-repeat;
+            background-size: cover;
+        }
+        .m2_a2_cont-3{
+            background: url(../image/tastiy/m2_a2_content_img-3.png) center top no-repeat;
+            background-size: cover;
+        }
+    /* // m2_area2 */
+
+    /* -- // 매인 2 - 맛의 매력을 더하는 다양한 방법 -- */
+
+    /* // main - container */
+
+}
+/* // Tablet__________________________________ */
+
+/* Mobile__________________________________ */
+@media screen and (max-width:767px){
+    
+    html{
+        width: 100%;
+        min-width: 320px;
+        max-width: 767px;
+        height: 100%;
+    }
+    
+    body{
+        width: 100%;
+        min-width: 320px;
+        max-width: 767px;
+        height: 100%;
+        position: relative;
+        font-size: 1rem;  /*모든글자 기본글자크기*/
+        font-weight: 400 !important;
+        /* font-weight: 100, 300, 400, 500, 700, 900; */
+        font-family: 'Noto Sans KR', sans-serif !important;
+        line-height: 1.6rem;
+        color: #222;
+        vertical-align: baseline;
+    }
+    body a{
+        display: inline-block;
+        text-decoration: none;
+    }
+    body img{vertical-align: middle;}
+
+    /* 우측 하단 TOP 버튼 */
+    #top_btn{
+        /* display: none; */
+        position:fixed;
+        bottom:4%;
+        right:2%;
+        z-index: 100;
+    }
+    #top_btn button{
+        /* width: 55px; */
+        padding: 15px 14px 10px 15px;
+        width: 50px;
+        height: 50px;
+        background: #3e3a39;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 50px;
+        box-shadow: 0px 2px 2px #666;
+        cursor: pointer;
+        transition: all 0.3s;
+        position: relative;
+    }
+    #top_btn button:hover{
+        width: 150px;
+        background-color: #3e3a39;
+        box-shadow: 0px 2px 2px #555;
+    }
+    #top_btn button .tB_hover_text{
+        vertical-align: middle;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        font: 400 15px 'MapoAgape';
+        white-space: nowrap;
+        color: #fff;
+        transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);;
+        opacity: 0;
+    }
+    #top_btn button:hover .tB_hover_text{
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);;
+        opacity: 1;
+    }
+    #top_btn button .material-icons{
+        position: absolute;
+        top: 11px;
+        right: 11px;
+        font-weight: 400;
+        font-size: 24px;
+        /* color: #040000; */
+        color: #ccc;
+        text-shadow: 0px 2px 3px #040000;
+        transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);;
+    }
+    #top_btn button:hover .material-icons{
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);;
+        font-weight: 400;
+        color: #fff;
+        text-shadow: none;
+    }
+    /* // 우측 하단 TOP 버튼 */
+
+    /* header height: 93px */
+
+    /* main - container */
+    #container{
+        width: 100%;
+        min-width: 320px;
+        max-width: 767px;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    /* -- 매인 1 - 만족오향족발의 세가지 맛의 비밀 -- */
+    #main1{
+        width: 100%;
+        min-width: 320px;
+        max-width: 767px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .m1_wrap{
+        width: 100%;
+        /* height: inherit; */
+        height: 100%;
+        margin: 0 auto;
+        background-color: #e6ded6;
+    }
+
+    .m1_title{
+        padding-top: 160px;
+    }
+    .m1_title h2{
+        text-align: center;
+        cursor: default;
+    }
+    .m1_title h2 span{
+        font-weight: 300;
+        /* font-size: 1.725rem; */
+        font-size: 7.75vw;
+        font-family: 'MapoAgape';
+        color: #3E3A39;
+        letter-spacing: -1px;
+        line-height: 10vw;
+    }
+
+    /* -- m1_area -- */
+    .m1_area{
+        /* margin-top: 85px; */
+        width: 100%;
+        max-width: unset;
+        margin: 85px auto 0;
+        display: grid;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .m1_a1{
+        width: 50%;
+        margin: 0 auto;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .m1_a1_title{
+        margin-top: 20px;
+        margin-left: 5%;
+    }
+    .m1_a1_title p{
+        font-weight: 300;
+        font-size: 2rem;
+        font-family: 'MapoAgape';
+        color: #3e3a39;
+        text-align: left;
+        letter-spacing: -2px;
+        line-height: 2.2rem;
+        position: relative;
+        z-index: 1;
+    }
+        .m1_a1_t1{
+            
+        }
+        .m1_a1_t2{}
+        .m1_a1_t2:before{
+            display: block;
+            content: '';
+            width: 125px;
+            height: 14px;
+            position: absolute;
+            z-index: -1;
+            bottom: -1px;
+            left: 0px;
+            background-color: #efbe7d;
+        }
+
+    .m1_a1_list{
+        margin-top: 46px;
+        margin-left: 10px;
+    }
+    .m1_a1_list ul{}
+    .m1_a1_list ul li{
+        /* width: 100%; */
+        margin: 0 auto;
+        text-align: left;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .m1_a1_list ul li+li{
+        margin-top: 36px;
+    }
+        .m1_a1_list_img{
+            display: block;
+            width: 30px;
+            height: 30px;
+        }
+        .m1_a1_list_img img{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+    .m1_a1_list_text{
+        margin-left: 10px;
+    }
+    .m1_a1_list_text dl{
+        font-family: 'Noto Serif KR', serif;
+        color: #3e3a39;
+    }
+    .m1_a1_list_text dl dt{
+        margin-bottom: 0px;
+    }
+        .m1_a1_list_text dl dt span{
+            font-weight: 900;
+            font-size: 1.125rem;
+            color: #3e3a39;
+            letter-spacing: -1px;
+            line-height: 0px;
+        }
+    .m1_a1_list_text dl dd{
+        margin-top: 12px;
+    }
+        .m1_a1_list_text dl dd span{
+            display: block;
+            font-weight: 500;
+            font-size: 0.8rem;
+            color: #3e3a39;
+            letter-spacing: -1px;
+            line-height: 1.25rem;
+            white-space: nowrap;
+        }
+
+    .m1_a2{
+        width: 70%;
+        margin: 60px auto 40px;
+
+    }
+    .m1_a2_img{
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .m1_a2_img:hover{
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        top: 0px;
+        left: 0px;
+    }
+
+    .m1_a2_img img{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        border-radius: 14px;
+        transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .m1_a2_img:hover img{
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        top: 0px;
+        left: 0px;
+        border-radius: 0px;
+    }
+    .m1_a2_img:before{
+        display: block;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: #821000;
+        position: absolute;
+        z-index: 0;
+        top: 10px;
+        left: 10px;
+        border-radius: 14px;
+        transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .m1_a2_img:hover.m1_a2_img:before{
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        top: 10px;
+        left: 10px;
+    }
+    /* -- // m1_area -- */
+    /* -- //매인 1 - 만족오향족발의 세가지 맛의 비밀 -- */
+
+    /* -- 매인 2 - 맛의 매력을 더하는 다양한 방법 -- */
+    #main2{
+        width: 100%;
+        min-width: 320px;
+        max-width: 767px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .m2_wrap{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* m2_area1 */
+    .m2_area1{
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+        background-color: #3e3a39;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .m2_a1_box{}
+    .m2_a1_box dl{
+        cursor: default;
+    }
+    .m2_a1_box dl dt{
+        margin-top: 20px;
+    }
+        .m2_a1_title{
+            width: 320px;
+            margin: 0 auto;
+            font-weight: normal;
+            font-size: 2.2rem;
+            font-family: 'MapoAgape';
+            line-height: 2.8rem;
+        }
+        .m2_a1_title-color1{
+            color: #efbe7d;
+        }
+    .m2_a1_box dl dd{
+        margin-top: 32px;
+    }
+        .m2_a1_text{
+            font-weight: 500;
+            font-size: 0.875rem;
+            font-family: 'Noto Serif KR', serif;
+            line-height: 30px;
+        }
+    /* // m2_area1 */
+
+    /* m2_area2 */
+    .m2_area2{
+        width: 100%;
+        min-width: 320px;
+        max-width: 767px;
+        height: 100%;
+    }
+    .m2_a2-content{
+        width: 100%;
+        height: inherit;
+        margin: 0 auto;
+        /* display: grid;
+        align-items: center;
+        justify-content: center; */
+        display: block;
+        color: #fff;
+    }
+    .m2_a2-content>div{
+        width: 100%;
+        height: 320px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+        .m2_a2_cont-1{
+            background: url(../image/tastiy/m2_a2_content_img-1.png) center top no-repeat;
+            background-size: cover;
+        }
+        .m2_a2_cont-2{
+            background: url(../image/tastiy/m2_a2_content_img-2.png) center top no-repeat;
+            background-size: cover;
+        }
+        .m2_a2_cont-3{
+            background: url(../image/tastiy/m2_a2_content_img-3.png) center top no-repeat;
+            background-size: cover;
+        }
+
+    .m2_a2-content>div>dl{
+        width: 100%;
+        margin: 0 auto;
+        cursor: default;
+    }
+
+    .m2_a2-content>div>dl:before{
+        display: block;
+        content: '';
+        width: 100%;
+        height: 320px;
+        margin: 0 auto;
+        background-color: rgba(34, 34, 34, 0.3);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .m2_a2-content>div>dl:hover:before{
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        background-color: rgba(34, 34, 34, 0.3);
+        filter: saturate(160%)
+    }
+
+    .m2_a2-content>div>dl>dt{
+        position: relative;
+        z-index: 1;
+        font-weight: normal;
+        font-size: 1.5rem;
+        font-family: 'MapoAgape';
+        word-break: keep-all;
+        transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+        .m2_a2-content>div>dl:hover>dt{
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            /* color: #3e3a39; */
+        }
+    .m2_a2-content>div>dl>dd{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        margin: 20px auto 0;
+        font-weight: 500;
+        font-size: 0.95rem;
+        font-family: 'Noto Serif KR', serif;
+        word-break: keep-all;
+        transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+        .m2_a2-content>div>dl:hover>dd{
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            /* color: #3e3a39; */
+        }
+
+       
+    /* // m2_area2 */
+
+    /* -- // 매인 2 - 맛의 매력을 더하는 다양한 방법 -- */
+
+    /* // main - container */    
+
+}
+/* // Mobile__________________________________ */

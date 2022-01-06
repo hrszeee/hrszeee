@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #3E3A39;
+  list-style: none;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+body {
+  overflow-x: hidden;
+}
+
+
+
+
+
+
+/* main */
+main {
+  background: #000;
+}
+
+main .bg {
+  background-image: url(/img/bg.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 1200px;
+  text-align: center;
+}
+
+main .bg .txt {
+  padding-top: 25vh;
+
+}
+
+main .bg .txt h1,
+p,
+span,
+div {
+  color: #fff;
+}
+
+main .bg .txt h1 {
+  font-family: 'GmarketSansBold';
+  font-size: 60px;
+  margin-bottom: 20px;
+  text-shadow: 0px 2px 10px gray;
+}
+
+main .bg .txt p,
+div {
+  font-family: 'Noto Serif KR', serif;
+}
+
+main .bg .txt p {
+  font-size: 24px;
+  margin-bottom: 120px;
+}
+
+main .bg .txt p em {
+  font-weight: 900;
+  color: #fff;
+}
+
+main .bg .txt span.red,
+div.yellow {
+  font-size: 30px;
+}
+
+main .bg .txt span.red em {
+  color: #E8927C;
+  font-weight: 900;
+}
+
+main .bg .txt div.yellow {
+  margin-top: 120px;
+}
+
+main .bg .txt div.yellow em {
+  color: #EFBE7D;
+  font-weight: 900;
+}
+
+main .blur1 {
+  width: 200%;
+  height: 300px;
+  background-color: #000;
+  margin-top: 700px;
+  filter: blur(5px);
+  -webkit-filter: blur(40px);
+}
+
+/* // main bg */
+
+main h1.title {
+  font-family: 'MapoAgape';
+  font-weight: normal;
+  font-size: 48px;
+  color: #BE9F7A;
+  position: relative;
+  z-index: 10;
+  margin-top: -180px;
+
+}
+
+/* history */
+
+h2 {
+  text-align: center;
+  padding-top: 300px;
+  font-family: 'MapoAgape';
+  font-weight: normal;
+  font-size: 48px;
+  color: #BE9F7A;
+}
+
+#history {
+  background-image: url(/img/hisbg.png);
+  margin-top: -100px;
+  width: 100%;
+  height: 2600px;
+  position: relative;
+}
+
+#history .line {
+  width: 3px;
+  height: 80%;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  margin-top: 120px;
+  opacity: 0.1;
+}
+
+#history .entries {
+  width: calc(100% - 80px);
+  max-width: 1600px;
+  margin: auto;
+  position: relative;
+  left: -5px;
+}
+
+#history .entries .entry {
+  width: calc(50% - 50px);
+  float: left;
+  padding: 30px 20px 30px;
+  clear: both;
+  text-align: right;
+  margin-top: 200px;
+}
+
+#history .entries .entry:not(:first-child) {
+  margin-top: -60px;
+}
+
+#history .entries .entry .title {
+  font-family: 'MapoAgape';
+  font-weight: normal;
+  font-size: 48px;
+  margin-bottom: 12px;
+  position: relative;
+  color: #BE9F7A;
+}
+
+#history .entries .entry .title:before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background-image: url(/img/mark.svg);
+  background-size: contain;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -12.9%;
+  z-index: 1000;
+}
+
+#history .entries .entry .txt {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.25em;
+}
+
+#history .entries .entry .txt p {
+  line-height: 2em;
+}
+
+#history .entries .entry:nth-child(2n) {
+  text-align: left;
+  float: right;
+}
+
+#history .entries .entry:nth-child(2n) .title:before {
+  left: -10.8%;
+}
+
+#history .entries .entry:nth-child(2n) .title.big:before {
+  transform: translate(-8px, -50%);
+}
