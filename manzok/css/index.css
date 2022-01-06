@@ -1,0 +1,1926 @@
+@charset "utf-8";
+
+/* fonts __________ */
+
+/* 마포 */
+@font-face {
+    font-family: 'MapoAgape';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoAgapeA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 지마켓산스 */
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif KR', serif;
+    font-style: normal;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* list-style: none; */
+
+
+/*스크롤바 위치확인*/
+#txt1 {
+    /* display: none; */
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 100000;
+}
+
+/*스크롤바 위치확인*/
+
+/* 우측 하단 TOP 버튼 */
+#top_btn {
+    /* display: none; */
+    position: fixed;
+    bottom: 6%;
+    right: 2%;
+    z-index: 100;
+}
+
+#top_btn button {
+    /* width: 55px; */
+    padding: 15px 14px 10px 15px;
+    width: 60px;
+    height: 60px;
+    background: #3e3a39;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50px;
+    box-shadow: 0px 2px 2px #666;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+}
+
+#top_btn button:hover {
+    width: 150px;
+    background-color: #3e3a39;
+    box-shadow: 0px 2px 2px #555;
+}
+
+#top_btn button .tB_hover_text {
+    vertical-align: middle;
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    font: 400 15px 'MapoAgape';
+    white-space: nowrap;
+    color: #fff;
+    transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+    ;
+    opacity: 0;
+}
+
+#top_btn button:hover .tB_hover_text {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    ;
+    opacity: 1;
+}
+
+#top_btn button .material-icons {
+    position: absolute;
+    top: 15px;
+    right: 14px;
+    font-weight: 400;
+    font-size: 30px;
+    /* color: #040000; */
+    color: #ccc;
+    text-shadow: 0px 2px 3px #040000;
+    transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+    ;
+}
+
+#top_btn button:hover .material-icons {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    ;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: none;
+}
+
+/* // 우측 하단 TOP 버튼 */
+
+/* 모바일 헤더 */
+#mo-gnb_menu {
+    display: none;
+}
+
+#mo-headerWrap {
+    display: none;
+}
+
+/* // 모바일 헤더 */
+
+/* 연혁, 맛의 비밀, 온족의 역사 */
+#about_nav {
+    position: fixed;
+    top: 120px;
+    z-index: 99;
+    width: 100%;
+    height: 0px;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#about_nav-tablet {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#about_nav-mobile {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+​ .about_nav-wrap {
+    width: 100%;
+    height: inherit;
+    margin: 0 auto;
+    background-color: #3e3a39e9;
+    color: #fff;
+}
+
+.about_nav-wrap ul {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_nav-wrap ul li {}
+
+.about_nav-wrap ul li+li {
+    margin-left: 25px;
+}
+
+.about_nav-1 {}
+
+.about_nav-2 {}
+
+.about_nav-3 {}
+
+.about_nav-wrap ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.about_nav-wrap ul li a span {
+    font-weight: 400;
+    font-size: 1.05rem;
+    font-family: 'Noto Serif KR', serif;
+    transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.about_nav-wrap ul li a:hover span {
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    font-weight: 700;
+    text-shadow: 0px 6px 3px #3e3a39;
+}
+
+/* JQurey */
+.about_nav-wrap ul li a span.an_active {
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    font-weight: 700;
+    background-color: #3e3a39;
+}
+
+/* // JQurey */
+
+/* // 연혁, 맛의 비밀, 온족의 역사 */
+
+/* header */
+
+.header_wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 120px;
+    color: #3e3a39;
+    /* color: #fff; */
+    font-family: 'Noto Serif KR';
+    font-weight: 700;
+}
+
+.header_wrap.scroll {
+    background-color: #FFFFFF;
+}
+
+.header {
+    position: fixed;
+    position: relative !important;
+    height: 100%;
+    display: flex;
+    /* background-color: rgba(0,0,0,0.2); */
+}
+
+.header .logo {
+    position: absolute;
+    left: 00px;
+    top: 20px;
+    width: 400px;
+    height: 81px;
+}
+
+.header .logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('../img/logo.png')no-repeat center;
+    font-size: 0;
+}
+
+.header .menulist {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: #fff; */
+}
+
+.header .menulist li {
+    /* width: 100px; */
+    margin: 20px;
+    font-size: 18px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.header .menulist li:hover {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    font-weight: 900;
+    font-size: 20px;
+    /* text-shadow: 0px 2px 12px #5f504d69; */
+}
+
+.header .menulist li.ml_on {
+    font-weight: 900;
+    font-size: 20px;
+    text-shadow: 0px 2px 12px #5f504d69;
+}
+
+.header .nav_button {
+    display: flex;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.header .nav_button li {
+    width: 140px;
+    text-align: center;
+    /* padding: 10px 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 16px rgba(34, 34, 34, 0.2);
+}
+
+.header .nav_button li:first-child {
+    margin-right: 16px;
+}
+
+.header .nav_button li.on {
+    background-color: #efbe7d;
+    border-radius: 30px;
+    font-weight: 700;
+    color: #3E3A39;
+    transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.header .nav_button li.on:hover {
+    background-color: #3E3A39;
+    color: #efbe7d;
+    font-weight: 900;
+    transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.header .nav_button li.on a {
+    display: block;
+    width: inherit;
+    height: inherit;
+    margin: 0 auto;
+    padding: 10px 0;
+    letter-spacing: 1px;
+}
+
+.header .nav_button li.num {
+    border: 1px solid #3e3a39;
+    border-radius: 30px;
+    /* color: #fff; */
+}
+
+.header .nav_button li.num span {
+    cursor: default;
+}
+
+/* // header */
+
+/* Tablet__________________________________ */
+@media screen and (min-width:768px) and (max-width:1199px) {
+
+    html {
+        width: 100%;
+        min-width: 768px;
+        height: 100%;
+    }
+
+    body {
+        width: 100%;
+        min-width: 768px;
+        height: 100%;
+        position: relative;
+        font-size: 1rem;
+        /*모든글자 기본글자크기*/
+        font-weight: 400 !important;
+        /* font-weight: 100, 300, 400, 500, 700, 900; */
+        font-family: 'Noto Serif KR', sans-serif !important;
+        line-height: 1.6rem;
+        color: #222;
+        vertical-align: baseline;
+    }
+
+    body a {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    body img {
+        vertical-align: middle;
+    }
+
+    /* 우측 하단 TOP 버튼 */
+    #top_btn {
+        /* display: none; */
+        position: fixed;
+        bottom: 4%;
+        right: 2%;
+        z-index: 100;
+    }
+
+    #top_btn button {
+        /* width: 55px; */
+        padding: 15px 14px 10px 15px;
+        width: 50px;
+        height: 50px;
+        background: #3e3a39;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 50px;
+        box-shadow: 0px 2px 2px #666;
+        cursor: pointer;
+        transition: all 0.3s;
+        position: relative;
+    }
+
+    #top_btn button:hover {
+        width: 150px;
+        background-color: #3e3a39;
+        box-shadow: 0px 2px 2px #555;
+    }
+
+    #top_btn button .tB_hover_text {
+        vertical-align: middle;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        font: 400 15px 'MapoAgape';
+        white-space: nowrap;
+        color: #fff;
+        transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+        ;
+        opacity: 0;
+    }
+
+    #top_btn button:hover .tB_hover_text {
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        ;
+        opacity: 1;
+    }
+
+    #top_btn button .material-icons {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        font-weight: 400;
+        font-size: 24px;
+        /* color: #040000; */
+        color: #ccc;
+        text-shadow: 0px 2px 3px #040000;
+        transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+        ;
+    }
+
+    #top_btn button:hover .material-icons {
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        ;
+        font-weight: 400;
+        color: #fff;
+        text-shadow: none;
+    }
+
+    /* // 우측 하단 TOP 버튼 */
+
+    /* header */
+
+    .header_wrap {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 100%;
+        height: 90px;
+        color: #3e3a39;
+        /* color: #fff; */
+        font-family: 'Noto Serif KR';
+        font-weight: 700;
+    }
+
+    .header_wrap.scroll {
+        background-color: #FFFFFF;
+    }
+
+    .header {
+        position: fixed;
+        position: relative !important;
+        height: 100%;
+        display: flex;
+        /* background-color: rgba(0,0,0,0.2); */
+    }
+
+    .header .logo {
+        position: absolute;
+        left: -40px;
+        top: 0px;
+        width: 400px;
+        height: 81px;
+        transform: scale(0.65);
+    }
+
+    .header .logo a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url('../img/logo.png')no-repeat center;
+        font-size: 0;
+    }
+
+    .header .menulist {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* margin-top: 90px; */
+        /* color: #fff; */
+    }
+
+    .header .menulist li {
+        width: 70px;
+        margin: 0 20px;
+        font-size: 0.95rem;
+        vertical-align: middle;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .header .menulist li:hover {
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        font-weight: 900;
+        font-size: 1rem;
+        /* text-shadow: 0px 2px 12px #5f504d69; */
+    }
+
+    .header .menulist li.ml_on {
+        font-weight: 900;
+        font-size: 1rem;
+        text-shadow: 0px 2px 12px #5f504d69;
+    }
+
+    .header .nav_button {
+        display: flex;
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-50%) scale(0.8);
+        font-size: 18px;
+    }
+
+    .header .nav_button li {
+        width: 140px;
+        text-align: center;
+        /* padding: 10px 0; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 2px 16px rgba(34, 34, 34, 0.2);
+    }
+
+    .header .nav_button li:first-child {
+        margin-right: 16px;
+    }
+
+    .header .nav_button li.on {
+        background-color: #efbe7d;
+        border-radius: 30px;
+        font-weight: 700;
+        color: #3E3A39;
+        transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .header .nav_button li.on:hover {
+        background-color: #3E3A39;
+        color: #efbe7d;
+        font-weight: 900;
+        transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .header .nav_button li.on a {
+        display: block;
+        width: inherit;
+        height: inherit;
+        margin: 0 auto;
+        padding: 10px 0;
+        letter-spacing: 1px;
+    }
+
+    .header .nav_button li.num {
+        border: 1px solid #3e3a39;
+        border-radius: 30px;
+        /* color: #fff; */
+    }
+
+    .header .nav_button li.num span {
+        cursor: default;
+    }
+
+    /* // header */
+
+    /* 연혁, 맛의 비밀, 온족의 역사 */
+    #about_nav {
+        display: none;
+        position: fixed;
+        top: 120px;
+        z-index: 99;
+        width: 100%;
+        height: 0px;
+        margin: 0 auto;
+        text-align: center;
+        opacity: 0;
+        transition: all 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    #about_nav-tablet {
+        display: block;
+        position: fixed;
+        top: 90px;
+        z-index: 99;
+        width: 100%;
+        height: 0px;
+        margin: 0 auto;
+        text-align: center;
+        opacity: 0;
+        transition: all 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    #about_nav-mobile {
+        display: none;
+        position: fixed;
+        top: 120px;
+        z-index: 99;
+        width: 100%;
+        height: 0px;
+        margin: 0 auto;
+        text-align: center;
+        opacity: 0;
+        transition: all 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .about_nav-wrap {
+        width: 100%;
+        height: inherit;
+        margin: 0 auto;
+        background-color: #3e3a39cd;
+        color: #fff;
+    }
+
+    .about_nav-wrap ul {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about_nav-wrap ul li {}
+
+    .about_nav-wrap ul li+li {
+        margin-left: 25px;
+    }
+
+    .about_nav-1 {}
+
+    .about_nav-2 {}
+
+    .about_nav-3 {}
+
+    .about_nav-wrap ul li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 140px;
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    .about_nav-wrap ul li a span {
+        font-weight: 400;
+        font-size: 1rem;
+        font-family: 'Noto Serif KR', serif;
+        transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .about_nav-wrap ul li a:hover span {
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        font-weight: 700;
+        text-shadow: 0px 6px 3px #3e3a39;
+    }
+
+    /* JQurey */
+    .about_nav-wrap ul li a span.an_active {
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        font-weight: 700;
+        background-color: #3e3a39;
+    }
+
+    /* // JQurey */
+
+    /* // 연혁, 맛의 비밀, 온족의 역사 */
+
+    @media screen and (min-width:768px) and (max-width:1000px) {
+        /* header */
+
+        .header_wrap {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            width: 100%;
+            height: 130px;
+            color: #3e3a39;
+            /* color: #fff; */
+            font-family: 'Noto Serif KR';
+            font-weight: 700;
+        }
+
+        .header_wrap.scroll {
+            background-color: #FFFFFF;
+        }
+
+        .header {
+            position: fixed;
+            position: relative !important;
+            height: 100%;
+            display: flex;
+            /* background-color: rgba(0,0,0,0.2); */
+        }
+
+        .header .logo {
+            position: absolute;
+            left: -40px;
+            top: 0px;
+            width: 400px;
+            height: 81px;
+            transform: scale(0.65);
+        }
+
+        .header .logo a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: url('../img/logo.png')no-repeat center;
+            font-size: 0;
+        }
+
+        .header .menulist {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            /* color: #fff; */
+            /* background-color: #fff; */
+        }
+
+        .header .menulist li {
+            width: 70px;
+            margin: 0 20px;
+            font-size: 0.95rem;
+            vertical-align: middle;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .header .menulist li:hover {
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            font-weight: 900;
+            font-size: 1rem;
+            /* text-shadow: 0px 2px 12px #5f504d69; */
+        }
+
+        .header .menulist li.ml_on {
+            font-weight: 900;
+            font-size: 1rem;
+            text-shadow: 0px 2px 12px #5f504d69;
+        }
+
+        .header .nav_button {
+            display: flex;
+            position: absolute;
+            right: 0px;
+            top: 50%;
+            transform: translateY(-50%) scale(0.8);
+            font-size: 18px;
+        }
+
+        .header .nav_button li {
+            width: 140px;
+            text-align: center;
+            /* padding: 10px 0; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 2px 16px rgba(34, 34, 34, 0.2);
+        }
+
+        .header .nav_button li:first-child {
+            margin-right: 16px;
+        }
+
+        .header .nav_button li.on {
+            background-color: #efbe7d;
+            border-radius: 30px;
+            font-weight: 700;
+            color: #3E3A39;
+            transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .header .nav_button li.on:hover {
+            background-color: #3E3A39;
+            color: #efbe7d;
+            font-weight: 900;
+            transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .header .nav_button li.on a {
+            display: block;
+            width: inherit;
+            height: inherit;
+            margin: 0 auto;
+            padding: 10px 0;
+            letter-spacing: 1px;
+        }
+
+        .header .nav_button li.num {
+            border: 1px solid #3e3a39;
+            border-radius: 30px;
+            /* color: #fff; */
+        }
+
+        .header .nav_button li.num span {
+            cursor: default;
+        }
+
+        /* // header */
+
+        /* 연혁, 맛의 비밀, 온족의 역사 */
+        #about_nav {
+            display: none;
+            position: fixed;
+            top: 120px;
+            z-index: 99;
+            width: 100%;
+            height: 0px;
+            margin: 0 auto;
+            text-align: center;
+            opacity: 0;
+            transition: all 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        #about_nav-tablet {
+            display: block;
+            position: fixed;
+            top: 130px;
+            z-index: 99;
+            width: 100%;
+            height: 0px;
+            margin: 0 auto;
+            text-align: center;
+            opacity: 0;
+            transition: all 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        #about_nav-mobile {
+            display: none;
+            position: fixed;
+            top: 120px;
+            z-index: 99;
+            width: 100%;
+            height: 0px;
+            margin: 0 auto;
+            text-align: center;
+            opacity: 0;
+            transition: all 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .about_nav-wrap {
+            width: 100%;
+            height: inherit;
+            margin: 0 auto;
+            background-color: #3e3a39cd;
+            color: #fff;
+        }
+
+        .about_nav-wrap ul {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about_nav-wrap ul li {}
+
+        .about_nav-wrap ul li+li {
+            margin-left: 25px;
+        }
+
+        .about_nav-1 {}
+
+        .about_nav-2 {}
+
+        .about_nav-3 {}
+
+        .about_nav-wrap ul li a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 140px;
+            height: 50px;
+            margin: 0 auto;
+        }
+
+        .about_nav-wrap ul li a span {
+            font-weight: 400;
+            font-size: 1rem;
+            font-family: 'Noto Serif KR', serif;
+            transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .about_nav-wrap ul li a:hover span {
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            font-weight: 700;
+            text-shadow: 0px 6px 3px #3e3a39;
+        }
+
+        /* JQurey */
+        .about_nav-wrap ul li a span.an_active {
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            font-weight: 700;
+            background-color: #3e3a39;
+        }
+
+        /* // JQurey */
+
+        /* // 연혁, 맛의 비밀, 온족의 역사 */
+
+    }
+
+}
+
+/* // Tablet__________________________________ */
+
+
+
+/* Mobile__________________________________ */
+@media screen and (max-width:767px) {
+    ​ html {
+        width: 100%;
+        min-width: 320px;
+        max-width: 767px;
+        height: 100%;
+    }
+
+    body {
+        width: 100%;
+        min-width: 320px;
+        max-width: 767px;
+        height: 100%;
+        position: relative;
+        font-size: 1rem;
+        /*모든글자 기본글자크기*/
+        font-weight: 400 !important;
+        /* font-weight: 100, 300, 400, 500, 700, 900; */
+        font-family: 'Noto Serif KR', sans-serif !important;
+        line-height: 1.6rem;
+        color: #222;
+        vertical-align: baseline;
+    }
+
+    body a {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    body img {
+        vertical-align: middle;
+    }
+
+    /* 우측 하단 TOP 버튼 */
+    #top_btn {
+        /* display: none; */
+        position: fixed;
+        bottom: 4%;
+        right: 2%;
+        z-index: 100;
+    }
+
+    #top_btn button {
+        /* width: 55px; */
+        padding: 15px 14px 10px 15px;
+        width: 50px;
+        height: 50px;
+        background: #3e3a39;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 50px;
+        box-shadow: 0px 2px 2px #666;
+        cursor: pointer;
+        transition: all 0.3s;
+        position: relative;
+    }
+
+    #top_btn button:hover {
+        width: 150px;
+        background-color: #3e3a39;
+        box-shadow: 0px 2px 2px #555;
+    }
+
+    #top_btn button .tB_hover_text {
+        vertical-align: middle;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        font: 400 15px 'MapoAgape';
+        white-space: nowrap;
+        color: #fff;
+        transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+        ;
+        opacity: 0;
+    }
+
+    #top_btn button:hover .tB_hover_text {
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        ;
+        opacity: 1;
+    }
+
+    #top_btn button .material-icons {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        font-weight: 400;
+        font-size: 24px;
+        /* color: #040000; */
+        color: #ccc;
+        text-shadow: 0px 2px 3px #040000;
+        transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+        ;
+    }
+
+    #top_btn button:hover .material-icons {
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        ;
+        font-weight: 400;
+        color: #fff;
+        text-shadow: none;
+    }
+
+    /* // 우측 하단 TOP 버튼 */
+
+    /* 모바일 GNB 영역 */
+    #mo-gnb_menu {
+        display: block;
+        position: fixed;
+        z-index: 101;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        background-color: #fff;
+        /* transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1); */
+    }
+
+    /* -- 닫기버튼  -- */
+    .mo-gnb_close-wrap {
+        width: 100%;
+        height: 60px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .mo-gnb_close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+        /* background-color: lightcyan; */
+    }
+
+    .mo-gnb_close a {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .mo-gnb_close a span {
+        display: block;
+        width: 30px;
+        height: 2px;
+        margin: 0 auto;
+        background-color: #3e3a39;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+    }
+
+    .mo-gc_line-1 {
+        transform: rotate(45deg);
+    }
+
+    .mo-gc_line-2 {
+        transform: rotate(135deg);
+    }
+
+    /* -- // 닫기버튼  -- */
+
+    .mo-gnb_menu_list {
+        width: 100%;
+        margin: 0 auto;
+        font-weight: 700;
+        font-size: 1.5rem;
+        font-family: 'noto serif kr';
+        color: #3e3a39;
+    }
+
+    .mo-gnb_menu_list ul {
+        padding-top: 30px;
+        text-align: right;
+        width: 100%;
+        height: 700px;
+        margin: 0 auto;
+        /* background-color: lightsalmon; */
+    }
+
+    .mo-gnb_menu_list ul li+li {
+        /* margin-top: 60px; */
+    }
+
+    .mo-gnb_menu_list ul li {
+        position: relative;
+    }
+
+    .mo-gml-1 {}
+
+    .mo-gml-2 {}
+
+    .mo-gml-3 {}
+
+    .mo-gml-4 {}
+
+    .mo-gnb_menu_list ul li a {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .mo-gnb_menu_list ul li a b {
+        margin-right: 60px;
+        display: inline-block;
+        height: 70px;
+        line-height: 70px;
+    }
+
+    .mo-gnb_menu_list ul li a .mo-gml-arrow {
+        position: absolute;
+        top: 35px;
+        right: 210px;
+        /* transform: rotateX(180deg); */
+        transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .mo-gnb_menu_list ul li.mo-gml-1 a .mo-gml-arrow {
+        right: 180px;
+    }
+
+    .mo-gnb_menu_list ul li.mo-gml-4 a .mo-gml-arrow {}
+
+    .mo-gnb_menu_list ul li.mo-gml-1.mo-gml-jquery a .mo-gml-arrow {
+        transform: rotateX(180deg);
+    }
+
+    .mo-gnb_menu_list ul li.mo-gml-4.mo-gml-jquery a .mo-gml-arrow {
+        transform: rotateX(180deg);
+    }
+
+    .mo-gnb_menu_list ul li a .mo-gml-arrow span {
+        display: block;
+        width: 16px;
+        height: 1px;
+        margin: 0 auto;
+        background-color: #3e3a39;
+        border-radius: 50px;
+        position: absolute;
+    }
+
+    .mo-gml-a1 {
+        transform: rotate(45deg);
+        top: 0;
+        left: 0;
+    }
+
+    .mo-gml-a2 {
+        top: 0;
+        left: 12px;
+        transform: rotate(135deg);
+    }
+
+    .mo-hide_area {
+        /* display: block; */
+        display: none;
+        width: 100%;
+        height: 100%;
+        margin: 0px auto;
+        overflow: hidden;
+        background-color: #e9e9e9;
+        /* transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1); */
+        position: relative;
+    }
+
+    /* JQuery */
+    .mo-hide_area.mo-ha-jquery {
+        /* transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); */
+        height: 100%;
+
+    }
+
+    /* // JQuery */
+
+    .mo-hide_area a {
+        width: 200px;
+        height: 45px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .mo-hide_area a span {
+        margin-right: 60px;
+        font-weight: 400;
+        font-size: 1.125rem;
+    }
+
+    .mo-hide_area a:active span {
+        font-weight: 900;
+        font-size: 1.125rem;
+    }
+
+    #mo-gnb_menu .nav_button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* position: absolute; */
+        right: 0px;
+        top: 50%;
+        transform: translateY(-50%) scale(0.8);
+        font-size: 18px;
+    }
+
+    #mo-gnb_menu .nav_button li+li {
+        margin-left: 25px;
+    }
+
+    #mo-gnb_menu .nav_button li {
+        width: 140px;
+        text-align: center;
+        /* padding: 10px 0; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 2px 16px rgba(34, 34, 34, 0.2);
+    }
+
+    #mo-gnb_menu .nav_button li.on {
+        background-color: #efbe7d;
+        border-radius: 30px;
+        font-weight: 700;
+        color: #3E3A39;
+        transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    #mo-gnb_menu .nav_button li.on:hover {
+        background-color: #3E3A39;
+        color: #efbe7d;
+        font-weight: 900;
+        transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    #mo-gnb_menu .nav_button li.on a {
+        display: block;
+        width: inherit;
+        height: inherit;
+        margin: 0 auto;
+        padding: 10px 0;
+        letter-spacing: 1px;
+    }
+
+    #mo-gnb_menu .nav_button li.num {
+        display: block;
+        padding: 10px 0;
+        border: 1px solid #3e3a39;
+        border-radius: 30px;
+        /* color: #fff; */
+    }
+
+    #mo-gnb_menu .nav_button li.num span {
+        cursor: default;
+    }
+
+    /* // 모바일 GNB 영역 */
+    ​
+
+    /* header */
+    .header_wrap {
+        display: none;
+    }
+
+    /* // header */
+    ​
+
+    /* mobile header */
+    #mo-headerWrap {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
+
+    .mo-header {
+        width: inherit;
+        height: 70px;
+        margin: 0 auto;
+        position: relative;
+        /* box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2); */
+    }
+
+    .mo-logo {
+        position: absolute;
+        width: 125px;
+        height: 50px;
+        left: 50%;
+        top: 10px;
+        /* transform: translate(-50%, -50%); */
+        transform: translateX(-50%);
+    }
+
+    .mo-logo a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url('../img/mo-logo.png') center center no-repeat;
+        background-size: cover;
+        font-size: 0;
+    }
+
+    .mo-gnb_btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 101;
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mo-gnb_btn a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .mo-gnb_btn a span.mo-gnb-line {
+        display: block;
+        width: 22px;
+        height: 2px;
+        margin: 0 auto;
+        background-color: #3e3a39;
+        border-radius: 50px;
+        position: relative;
+    }
+
+    .mo-gnb-line_1 {
+        top: 12px;
+    }
+
+    .mo-gnb-line_2 {
+        top: 17px;
+    }
+
+    .mo-gnb-line_3 {
+        top: 22px;
+    }
+
+    /* // mobile header */
+
+    /* 연혁, 맛의 비밀, 온족의 역사 */
+    #about_nav {
+        display: none;
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        height: 40px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #about_nav-tablet {
+        display: none;
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        height: 50px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #about_nav-mobile {
+        display: block;
+        position: fixed;
+        top: 70px;
+        z-index: 100;
+        width: 100%;
+        height: 0px;
+        margin: 0 auto;
+        text-align: center;
+        overflow: hidden;
+        transition: all 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .about_nav-wrap {
+        width: 100%;
+        height: inherit;
+        margin: 0 auto;
+        background-color: #3e3a39cd;
+        color: #fff;
+    }
+
+    .about_nav-wrap ul {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about_nav-wrap ul li {
+        width: 33.3%;
+    }
+
+    .about_nav-wrap ul li+li {
+        margin-left: 0px;
+    }
+
+    .about_nav-1 {}
+
+    .about_nav-2 {}
+
+    .about_nav-3 {}
+
+    .about_nav-wrap ul li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 40px;
+        margin: 0 auto;
+    }
+
+    .about_nav-wrap ul li a span {
+        font-weight: 400;
+        font-size: 0.9rem;
+        font-family: 'Noto Serif KR', serif;
+        transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .about_nav-wrap ul li a:hover span {
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        font-weight: 700;
+        text-shadow: 0px 6px 3px #3e3a39;
+    }
+
+    /* JQurey */
+    .about_nav-wrap ul li a span.an_active {
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        font-weight: 700;
+        background-color: #3e3a39;
+    }
+
+    /* // JQurey */
+
+    /* // 연혁, 맛의 비밀, 온족의 역사 */
+
+}
+
+/* // Mobile__________________________________ */
+
+header {
+    display: none;
+}
+
+/* section */
+#wrap {
+    width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* section 1 */
+#section1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/sec1_bg1.png);
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#section1 img {}
+
+#section1 #wrap {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#section1 .txt {
+    padding-top: 26vh;
+    font-weight: 300;
+}
+
+#section1 .txt span {
+    font-size: 2.1vw;
+    line-height: 2.5;
+}
+
+#section1 .txt h2 {
+    margin-bottom: 40px;
+}
+
+#section1 .txt h2,
+h2 em {
+    font-size: 3.1vw;
+    font-family: 'MapoAgape';
+    font-weight: normal;
+}
+
+#section1 .txt h2 em {
+    color: #efbe7d;
+}
+
+#section1 .txt p {
+    font-size: 1.3vw;
+    line-height: 1.5;
+}
+
+#section1 .txt p em {
+    font-weight: 700;
+}
+
+#section1 .txt p.under {
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+/* // section 1 */
+
+/* section 2 */
+#section2 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/sec2_bg.png);
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+
+}
+
+#section2 .sec {
+    display: grid;
+    grid-template-columns: repeat(3, 33.3vw);
+    grid-template-rows: 100vh;
+}
+
+#section2 img {
+    margin-top: 45vh;
+    transform: translateY(-45%);
+    width: 60%;
+}
+
+#section2 .sec1,
+.sec2,
+.sec3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section2 .sec1 {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#section2 .sec2 {
+    mix-blend-mode: hard-light;
+    background-color: #9c1029;
+}
+
+#section2 .sec3 {
+    background-color: rgba(0, 1, 22, 0.726);
+}
+
+#section2 .sec1 span {
+    font-family: 'MapoAgape';
+    font-weight: normal;
+    font-size: 48px;
+    margin-top: -15.5vh;
+}
+
+#section2 .sec2 span {
+    font-family: 'MapoAgape';
+    font-weight: normal;
+    font-size: 48px;
+    margin-top: -3vh;
+}
+
+#section2 .sec3 span {
+    font-family: 'MapoAgape';
+    font-weight: normal;
+    font-size: 48px;
+    margin-top: -18.4vh;
+}
+
+/* // section 2 */
+
+
+/* section 3 */
+/* section 3 */
+#section3 {
+    background-color: #000;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+/* #section3 .cont2 {
+    display: none;
+} */
+#section3 .cont1 .cont1_inner {
+    background: url(../img/sec3_bg1.png) no-repeat;
+    height: 100vh;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#section3 .cont2 .cont2_inner {
+    background: url(../img/sec3_bg2.png) no-repeat;
+    background-position: 90% 30%;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+
+}
+#section3 .cont1 .cont1_inner h2, .cont2 .cont2_inner h2 {
+    font-family: 'MapoAgape';
+    font-weight: normal;
+    font-size: 80px;
+    margin-bottom: 40px;
+    padding-top: 35vh;
+}
+#section3 .cont1 .cont1_inner p, .cont2 .cont2_inner p {
+    font-size: 36px;
+    font-weight: 400;
+}
+#section3 .cont1 .circle {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+#section3 .cont2 .circle {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+/* // section 3 */
+
+/* section 4 */
+#section4 {
+    position: relative;
+}
+#section4 img.sec4_video {
+    vertical-align: bottom;
+    width: 100%;
+    overflow: hidden;
+    /* height: 100vh; */
+}
+#section4 .txt_wrap {
+    position: absolute;
+    top: 0;
+    left: 13.7%;
+    padding-top: 25vh;
+    display: flex;
+}
+#section4 .txt_wrap h2 {
+    font-family: 'MapoAgape';
+    font-weight: normal;
+    font-size: 2.5vw;
+    margin-bottom: 20px;
+}
+#section4 .txt_wrap p {
+    font-size: 1.2vw;
+    font-weight: 200;
+}
+#section4 .txt_wrap .txt_left p {
+    margin-bottom: 200px;
+}
+#section4 .txt_wrap .txt_right {
+    background-color: #3e3a3979;
+    padding: 40px 40px 40px 70px;
+    text-align: right;
+    position: absolute;
+    right: -200%;
+    top: 55%;    
+}
+/* // section 4 */
+
+
+@media screen and (max-width:767px) {
+    #section1 .txt span {
+        font-size: 1.8rem;
+    }
+
+    #section1 .txt h2,
+    h2 em {
+        font-size: 1.9rem;
+        line-height: 1.2;
+    }
+
+    #section1 .txt p {
+        font-size: 0.8rem;
+    }
+
+    #section2 {
+        height: 150vh;
+    }
+
+    #section2 .sec {
+        grid-template-columns: repeat(1, 100vw);
+    }
+
+    #section2 .sec1,
+    .sec2,
+    .sec3 {
+        height: 50vh;
+    }
+
+    #section2 img {
+        margin-top: 20vh;
+        width: 60%;
+    }
+
+    #section2 .sec2 {
+        margin-top: -50vh;
+    }
+
+    #section2 .sec2 img {
+        margin-top: 17vh;
+    }
+
+    #section2 .sec1 span {
+        font-family: 'MapoAgape';
+        font-weight: normal;
+        font-size: 2rem;
+    }
+
+    #section2 .sec2 span {
+        font-family: 'MapoAgape';
+        font-weight: normal;
+        font-size: 2rem;
+        line-height: 1;
+        margin-top: -5vh;
+    }
+
+    #section2 .sec3 span {
+        font-family: 'MapoAgape';
+        font-weight: normal;
+        font-size: 2rem;
+        margin-top: -18.4vh;
+        position: relative;
+        z-index: 10;
+    }
+
+    #section2 .sec3 {
+        background-image: url(../img/sec2bg3.png);
+        background-color: rgba(0, 1, 22, 0.034);
+    }
+
+    #section3 .cont1 .cont1_inner h2,
+    .cont2 .cont2_inner h2 {
+        font-family: 'MapoAgape';
+        font-weight: normal;
+        font-size: 4rem;
+        margin-bottom: 40px;
+        padding-top: 35vh;
+    }
+
+    #section3 .cont1 .cont1_inner p,
+    .cont2 .cont2_inner p {
+        font-size: 1.5rem;
+        line-height: 1.3;
+        font-weight: 400;
+    }
+    #section3 .cont1 .cont1_inner h2 {
+        padding-top: 40vh;
+    }
+    .cont2 .cont2_inner p {
+        width: 65vw;
+        margin: 0 auto;
+    }
+    #section3 .cont1 .circle {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid #fff;
+        border-radius: 50%;
+    }
+    #section3 .cont2 .circle {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid #fff;
+        border-radius: 50%;
+    }
+
+
+    /* #section4 ________________*/
+    #section4 {
+        position: relative;
+    }
+    #section4 img.sec4_video {
+        vertical-align: bottom;
+        width: 100%;
+        overflow: hidden;
+        /* height: 100vh; */
+    }
+    #section4 img.no {
+        display: none;
+    }
+    #section4 .txt_wrap {
+        position: absolute;
+        top: 0;
+        left: 0%;
+        padding-top: 25vh;
+        display: block;
+        width: 100%;
+    }
+    #section4 .txt_wrap h2 {
+        font-family: 'MapoAgape';
+        font-weight: normal;
+        font-size: 2.5vw;
+        margin-bottom: 20px;
+    }
+    #section4 .txt_wrap p {
+        font-size: 1.2vw;
+        font-weight: 200;
+    }
+    #section4 .txt_wrap .txt_left p {
+        margin-bottom: 200px;
+    }
+    #section4 .txt_wrap .txt_left {
+        background-color: #3e3a3979;
+        width: 100%;
+
+    }
+    #section4 .txt_wrap .txt_right {
+        background-color: #3e3a39;
+        padding: 40px 40px 40px 70px;
+        text-align: right;
+        position: absolute;
+        right: 0%;
+        top: 0%;    
+    }
+}
+
